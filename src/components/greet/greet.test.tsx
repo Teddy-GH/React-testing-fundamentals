@@ -9,10 +9,4 @@ describe("Greet component", () => {
   });
 });
 
-describe("Nested", () => {
-  test("Greet renders with a name", () => {
-    render(<Greet name="Teddy" />);
-    const textElement = screen.getByText(/Hello Teddy/i);
-    expect(textElement).toBeInTheDocument();
-  });
-});
+
