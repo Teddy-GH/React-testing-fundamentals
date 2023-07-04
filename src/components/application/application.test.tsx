@@ -32,6 +32,14 @@ describe("Application", () => {
     const paragraphElement= screen.getByText('All fields are mandatory');
     expect(paragraphElement).toBeInTheDocument();
 
+    // TextMatch using regx
+    const parElement2 = screen.getByText(/all fields are mandatory/i);
+    expect(parElement2).toBeInTheDocument();
+
+    //Text Matcher using function
+    const paraElement3 = screen.getByText((content) => content.startsWith('All'));
+    expect(paraElement3).toBeInTheDocument();
+
     const spanElement = screen.getByTitle('close');
     expect(spanElement).toBeInTheDocument();
 
