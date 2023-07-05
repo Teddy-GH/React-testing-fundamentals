@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Application = () => {
   return (
@@ -8,7 +8,7 @@ const Application = () => {
       <p>All fields are mandatory</p>
       <span title="close">X</span>
       <img src="https://via.placeholder.com/150" alt="a person with a laptop" />
-      <div data-testid='custom-element'>Custom HTML element</div>
+      <div data-testid="custom-element">Custom HTML element</div>
       <form>
         <div>
           <label htmlFor="name">Name</label>
@@ -44,7 +44,7 @@ const Application = () => {
         <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}
 
-export default Application;
+export default Application
